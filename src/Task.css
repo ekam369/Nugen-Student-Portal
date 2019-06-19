@@ -2,21 +2,20 @@
     position: absolute;
     width: 80%;
     height: 100%;
-    /* background: rgb(246, 245, 245); */
+    background: rgb(246, 245, 245);
 }
 .heading{
     position: absolute;
     display: flex;
     justify-content: center;
-    
     width: 70%;
     height: 7%;
-    margin-left: 17%;
+    margin-left: 16%;
     margin-top: 1.2%;
     font-weight: 100;
     background: #fff;
     border-radius: 20px;
-    box-shadow: rgb(116, 61, 121) 1px 1px 10px 1px;
+    box-shadow: rgba(90, 83, 192, 0.671) 1px 1px 10px 1px;
 }
 .task-tex{
     font-size: 30px;
@@ -26,19 +25,33 @@
     font-family: Arial;
     font-weight: bolder;
 }
+
+/*********************************************************/
+
+.task-body{
+    margin-top: 10%;
+    margin-left: 6%;
+    width: 93%;
+    height: 95%;
+    overflow-y: auto;
+}
+
 .tick-box{
+    overflow-y: visible;
     position: absolute;
     width: 6%;
-    height: 100%;
-    border-right: solid rgba(13, 52, 124, 0.801) 1.4px;
+    height: 80%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(90, 83, 192, 0.671) 1px 1px 10px 1px;
 }
 .ticks{
     display: flex;
     flex-direction: column;
     position: absolute;
     width: 100%;
-    height: 93%;
-    margin-top: 90%;
+    height: 100%;
+    /* background: #000; */
 }
 .tick-cover{
     display: flex;
@@ -46,21 +59,21 @@
     align-items: center;
     width: 100%;
     height: 9.3%;
-    /* background: #000; */
     margin-top: 16%;
+    /* background: #000; */
 }
 .tick{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 25px;
+    width: 27px;
+    height: 27px;
     border-radius: 50%;
-    /* border: solid rgba(0, 0, 0, 0.37) 2px; */
     background: rgba(29, 83, 199, 0.883);
+    border: solid rgba(0, 0, 0, 0.37) 2px;
 }
 .check{
     color: #fff;
+    margin-top: 20%;
+    margin-left: -90px;
 }
 .temp-tick{
     width: 25px;
@@ -69,13 +82,16 @@
     border: solid rgba(0, 0, 0, 0.37) 2px;
 }
 
+/*************************************************/
+
 .task-given-box{
     position: absolute;
-    width: 84%;
-    height: 92.8%;
-    margin-left: 6%;
-    margin-top: 4.8%;
-    /* background: rgba(0, 0, 0, 0.178); */
+    width: 76.7%;
+    height: 80%;
+    margin-left: 7%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(90, 83, 192, 0.671) 1px 1px 10px 1px;
 }
 .task-given{
     display: flex;
@@ -92,40 +108,48 @@
     font-size: 19px;
     margin-left: 20px;
     letter-spacing: 1px;
-    color: rgb(40, 86, 92); 
+    color: #000;
 }
+
+/****************************************************/
 
 .upload-box{
     position: absolute;
-    width: 10%;
-    height: 100%;
-    border-left: solid rgba(0, 0, 0, 0.315) 1.4px;
+    width: 6%;
+    height: 80%;
+    background: #fff;
+    border-radius: 20px;
     right: 0;
+    margin-right: 3%;
+    box-shadow: rgba(90, 83, 192, 0.671) 1px 1px 10px 1px;
 }
 .uploads{
     display: flex;
     flex-direction: column;
     position: absolute;
     width: 100%;
-    height: 93%;
-    margin-top: 48%;
+    height: 100%;
+    /* background: #000; */
 }
 .upload-cover{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 8%;
-    margin-top: 18%;
+    height: 9.3%;
+    margin-top: 16%;
+    /* background: #000; */
 }
 .upload{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    height: 80%;
-    background: rgba(29, 83, 199, 0.787);
-    border-radius: 20px;
-    font-size: 24px;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
     color: #fff;
+    background: rgba(29, 83, 199, 0.883);
+    border: solid rgba(0, 0, 0, 0.37) 2px;
+}
+.status{
+    margin-top: 5px;
+    margin-right: 90px;
 }

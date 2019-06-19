@@ -2,16 +2,16 @@
     position: absolute;
     display: flex;
     width: 14%;
-    height: 102%;
+    height: 93.8%;
     margin-top: 3.2%;
-    background: linear-gradient(rgb(114, 55, 124), rgb(112, 53, 109), rgb(136, 57, 125), 
-    rgb(188, 114, 231), rgb(231, 65, 107));
+    /* background: linear-gradient(rgb(73, 67, 155), rgb(73, 67, 155), rgb(73, 67, 155),rgb(73, 67, 155),rgb(94, 73, 165)); */
+    background: #9368e9;
 }
 
 .tabs{
     margin-top: 10%;
     width: 100%;
-    height: 100%;
+    height: 97%;
     display: flex;
     flex-direction: column;
 }
@@ -19,14 +19,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(255, 255, 255, 0.808);
     width: 100%;
     height: 5%;
     font-weight: 100;
 }
 .tab:hover{
     transition: 0.7s;
-    background: rgba(188, 114, 231, 0.363);
+    background: rgb(51, 30, 88);
     color: #fff;
     /* font-weight: 400; */
 }

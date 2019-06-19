@@ -1,0 +1,78 @@
+.today-task-box{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background: #fff;
+    margin-top: 2%;
+    margin-left: 34%;
+    box-shadow: rgb(218, 46, 46) 1px 1px 10px 1px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.task-today-tex-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    background: rgba(214, 201, 248, 0.212);
+    font-size: 25px;
+    border-bottom: solid rgba(134, 134, 134, 0.37) 2px;
+}
+
+.task-body2{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background: rgb(251, 102, 102);
+}
+.task-cover2{
+    width: 100%;
+    height: 18%;
+    margin-top: 2%;
+    /* background: #000; */
+}
+.tick2{
+    width: 10%;
+    height: 100%;
+    float: left;
+    /* background: #000; */
+}
+.check2{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 20px;
+    border: solid 2px #000;
+}
+
+.task2{
+    width: 80%;
+    height: 100%;
+    margin-left: 3%;
+    /* background: #000; */
+}
+.task-tex2{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.upload2{
+    position: absolute;
+    width: 10%;
+    height: 8%;
+    /* background: #000; */
+    right: 0;
+    margin-top: -42px;
+    margin-right: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+.upload2-icon{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 5px;
+}
