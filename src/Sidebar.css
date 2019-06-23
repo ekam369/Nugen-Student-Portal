@@ -3,7 +3,7 @@
     display: flex;
     width: 14%;
     height: 93.8%;
-    margin-top: 3.2%;
+    margin-top: 3%;
     /* background: linear-gradient(rgb(73, 67, 155), rgb(73, 67, 155), rgb(73, 67, 155),rgb(73, 67, 155),rgb(94, 73, 165)); */
     background: #9368e9;
 }
@@ -42,7 +42,7 @@
     position: absolute;
     left: 28px;;
 }
-.fa, .fas{
+.ico{
     position: absolute;
     right: 28px;
     font-size: 16px;

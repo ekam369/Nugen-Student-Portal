@@ -1,0 +1,336 @@
+.personalbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  background: #fff;
+  border-bottom: solid rgba(12, 12, 12, 0.192) 1px;
+}
+
+.personalbar .menu {
+  width: 55px;
+  height: 100%;
+  float: left;
+  cursor: pointer;
+}
+
+.personalbar .menu .menu-box {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45px;
+  height: 45px;
+  border: solid rgba(12, 12, 12, 0.192) 1px;
+  border-radius: 50%;
+  margin: 6px 6px;
+  left: 0;
+}
+
+@media (min-width: 740px) {
+  .personalbar .menu .menu-box {
+    display: none;
+  }
+}
+
+.personalbar .menu .menu-box .bar1, .personalbar .menu .menu-box .bar2, .personalbar .menu .menu-box .bar3 {
+  width: 70%;
+  height: 5px;
+  background: #9368e9;
+  margin: 3px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.personalbar .nugen-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  width: 100px;
+  height: 100%;
+  float: left;
+}
+
+@media (min-width: 740px) {
+  .personalbar .nugen-logo {
+    position: absolute;
+    left: 15px;
+    width: 130px;
+    font-size: 27px;
+    border-right: solid rgba(12, 12, 12, 0.192) 1px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .personalbar .nugen-logo {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1230px) {
+  .personalbar .nugen-logo {
+    width: 243px;
+  }
+}
+
+.personalbar .nugen-logo .laptop {
+  width: 40px;
+  height: 100%;
+  background: #000;
+  margin-top: 30%;
+  background: #9368e9;
+  background-clip: text;
+  color: transparent;
+  background-position: -30px -30px;
+  font-size: 27px;
+}
+
+@media (min-width: 740px) {
+  .personalbar .nugen-logo .laptop {
+    margin-top: 24%;
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .personalbar .nugen-logo .laptop {
+    margin-left: 10px;
+    margin-top: 21%;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1230px) {
+  .personalbar .nugen-logo .laptop {
+    margin-top: 8%;
+    margin-left: 37px;
+    font-size: 30px;
+    width: 55px;
+  }
+}
+
+.personalbar .nugen-logo .nugen-tex {
+  width: 100%;
+  height: 100%;
+  background: #9368e9;
+  background-clip: text;
+  color: transparent;
+  background-position: -30px -30px;
+  margin-top: 21%;
+}
+
+@media (min-width: 740px) {
+  .personalbar .nugen-logo .nugen-tex {
+    font-size: 22px;
+    margin-top: 20%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .personalbar .nugen-logo .nugen-tex {
+    margin-top: 17%;
+    margin-left: 5px;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1230px) {
+  .personalbar .nugen-logo .nugen-tex {
+    margin-top: 6%;
+    font-size: 30px;
+    margin-left: 5px;
+  }
+}
+
+.personalbar .right-cover {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  width: 150px;
+  margin-left: 14%;
+  height: 100%;
+}
+
+@media (min-width: 740px) {
+  .personalbar .right-cover {
+    border-left: solid rgba(12, 12, 12, 0.192) 1px;
+  }
+}
+
+@media (min-width: 900px) {
+  .personalbar .right-cover {
+    border-left: solid rgba(12, 12, 12, 0.103) 2px;
+    width: 200px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .personalbar .right-cover {
+    width: 220px;
+  }
+}
+
+.personalbar .right-cover .logout {
+  visibility: hidden;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  border-left: solid rgba(12, 12, 12, 0.103) 2px;
+  color: #9961da;
+}
+
+@media (min-width: 900px) {
+  .personalbar .right-cover .logout {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1000px) {
+  .personalbar .right-cover .logout {
+    width: 60px;
+  }
+}
+
+.personalbar .right-cover .noti-icon {
+  visibility: hidden;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 100%;
+  right: 200px;
+  border-left: solid rgba(12, 12, 12, 0.103) 2px;
+}
+
+@media (min-width: 900px) {
+  .personalbar .right-cover .noti-icon {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1000px) {
+  .personalbar .right-cover .noti-icon {
+    width: 68px;
+    right: 220px;
+  }
+}
+
+.personalbar .right-cover #bell {
+  font-size: 18px;
+  font-weight: bold;
+  color: #9368e9;
+}
+
+.personalbar .right-cover .photo {
+  position: absolute;
+  float: left;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: solid #9368e9 2px;
+  background-image: url("../1.jpeg");
+  background-size: 100% 130%;
+  margin-top: 12px;
+  right: 15px;
+}
+
+@media (min-width: 740px) {
+  .personalbar .right-cover .photo {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    right: 110px;
+  }
+}
+
+@media (min-width: 900px) {
+  .personalbar .right-cover .photo {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    right: 155px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .personalbar .right-cover .photo {
+    right: 175px;
+  }
+}
+
+.personalbar .right-cover .naam {
+  width: 100px;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.746);
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 5px;
+  right: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  top: 35%;
+  display: none;
+}
+
+@media (min-width: 740px) {
+  .personalbar .right-cover .naam {
+    display: block;
+  }
+}
+
+@media (min-width: 900px) {
+  .personalbar .right-cover .naam {
+    display: block;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .personalbar .right-cover .naam {
+    margin-right: 69px;
+  }
+}
+/*# sourceMappingURL=Head.css.map */

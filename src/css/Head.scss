@@ -1,0 +1,292 @@
+$colors : (
+    tex: #fff,
+    temp: #000,
+    purplee: #9368e9
+);
+
+$borders : (
+    border-botm: solid rgba(12, 12, 12, 0.192) 1px,
+    border-lefts: solid rgba(12, 12, 12, 0.103) 2px,
+    border1: solid #9368e9 2px
+);
+
+@function color($name){
+    @return map-get($colors, $name);
+}
+@function border($name){
+    @return map-get($borders, $name);
+}
+
+$desk1 : 740px;
+$desk2 : 900px;
+$desk3 : 1000px;
+$desk4 : 1230px;
+
+@mixin desk1{
+    @media (min-width: #{$desk1}) {
+        @content;
+    }
+}
+@mixin desk2{
+    @media (min-width: #{$desk2}) {
+        @content;
+    }
+}
+@mixin desk3{
+    @media (min-width: #{$desk3}) {
+        @content;
+    }
+}
+@mixin desk4{
+    @media (min-width: #{$desk4}) {
+        @content;
+    }
+}
+
+.personalbar{
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    background: color(tex);
+    border-bottom: border(border-botm); 
+
+    .menu{
+        width: 55px;
+        height: 100%;  
+        float: left;
+        cursor: pointer; 
+
+        .menu-box {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            border: border(border-botm);
+            border-radius: 50%;
+            margin: 6px 6px;
+            left: 0;
+
+            @include desk1{
+                display: none;
+            }
+
+            .bar1, .bar2, .bar3 {
+                width: 70%;
+                height: 5px;
+                background: color(purplee);
+                margin: 3px 0;
+                transition: 0.4s;
+              }
+            }
+    }
+
+    .nugen-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: bolder;
+        width: 100px;
+        height: 100%;
+        float: left;
+        // background: #000;
+
+        @include desk1{
+            position: absolute;
+            left: 15px;
+            width: 130px;
+            font-size: 27px;   
+            border-right: border(border-botm);
+            // background: #000;
+        }
+        @include desk3{
+            width: 150px;
+        }
+        @include desk4{
+            width: 243px;
+        }
+
+        .laptop{
+            width: 40px;
+            height: 100%;
+            background: #000;
+            margin-top: 30%;
+            background: color(purplee);
+            background-clip: text;
+            color: transparent;
+            background-position: -30px -30px;
+            font-size: 27px;
+
+            @include desk1{
+                margin-top: 24%;
+                font-size: 22px;
+            }
+            @include desk3{
+                margin-left: 10px;
+                margin-top: 21%;
+                font-size: 25px;   
+            }
+            @include desk4{
+                margin-top: 8%;
+                margin-left: 37px;
+                font-size: 30px;
+                width: 55px;
+            }
+        }
+        .nugen-tex{
+            width: 100%;
+            height: 100%;
+            background: color(purplee);
+            background-clip: text;
+            color: transparent;
+            background-position: -30px -30px;
+            margin-top: 21%;
+
+            @include desk1{
+                font-size: 22px;
+                margin-top: 20%;
+            }
+            @include desk3{
+                margin-top: 17%;
+                margin-left: 5px;
+                font-size: 25px;   
+            }
+            @include desk4{
+                margin-top: 6%;
+                font-size: 30px;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .right-cover{
+        position: absolute;
+        display: flex;
+        right: 0;
+        width: 150px;
+        margin-left: 14%;
+        height: 100%;
+        // background: #000;
+
+        @include desk1{
+            border-left: border(border-botm);
+        }
+        @include desk2{
+            border-left: border(border-lefts);
+            width: 200px;
+        }
+        @include desk3{
+            width: 220px;       
+        }
+
+        .logout{
+            visibility: hidden;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 0;
+            width: 40px;
+            height: 100%;
+            border-left: border(border-lefts);
+            color: rgb(153, 97, 218);
+
+            @include desk2{
+                visibility: visible;
+            }
+            @include desk3{
+                width: 60px;   
+            }
+        }
+
+        .noti-icon{
+            visibility: hidden;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 100%;
+            right: 200px;
+            border-left: solid rgba(12, 12, 12, 0.103) 2px;
+            // background: #000;
+
+            @include desk2{
+                visibility: visible;
+            }
+            @include desk3{
+                width: 68px;
+                right: 220px;   
+            }
+        }
+        #bell{
+            font-size: 18px;
+            font-weight: bold;
+            color:#9368e9;
+        }
+
+        .photo{
+            position: absolute;
+            float: left;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: border(border1);
+            background-image: url("../1.jpeg");
+            background-size: 100% 130%;
+            margin-top: 12px;
+            right: 15px;
+
+            @include desk1{
+                width: 30px;
+                height: 30px;
+                margin-top: 15px;
+                right: 110px;
+            }
+            @include desk2{
+                width: 30px;
+                height: 30px;
+                margin-top: 15px;
+                right: 155px;
+            }
+            @include desk3{
+                right: 175px;   
+            }
+        }
+        
+        .naam{
+            width: 100px;
+            position: absolute;
+            color: rgba(0, 0, 0, 0.746);
+            font-weight: bold;
+            font-size: 15px;
+            margin-right: 5px;
+            right: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            top: 35%;
+            display: none;
+
+            @include desk1{
+                display: block;
+            }
+            @include desk2{
+                display: block;
+                margin-right: 50px;
+            }
+            @include desk3{
+                margin-right: 69px;   
+            }
+            
+        }
+    }
+      
+}
+
+

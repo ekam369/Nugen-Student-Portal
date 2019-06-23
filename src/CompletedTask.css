@@ -1,77 +1,206 @@
-.completed-task-box{
+.comp-task-par{
+    overflow-y: scroll;
+    overflow-x: hidden;
     position: absolute;
-    width: 30%;
-    height: 90%;
-    background: #fff;
-    margin-top: 2%;
-    margin-left: 2%;
-    box-shadow: rgb(243, 189, 9) 1px 1px 10px 2px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    width: 84.3%;
+    height: 100%;
+    background: rgba(81, 49, 117, 0.055);
 }
-.task-comp-tex-box{
+.head{
+    width: 100%;
+    height: 4%;
+    color: rgba(0, 0, 0, 0.555);
+    font-size: 25px;
+}
+.taday-task-tex{
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.task-body{
+    width: 65%;
+    height: 17%;
+    margin-left: 5.3%;
+    margin-top: 2%;
+    background: #fff;
+    box-shadow: rgba(17, 17, 17, 0.527) 2px 2px 20px 1px;
+    /* box-shadow: rgba(94, 71, 168, 0.527) 2px 2px 20px 1px; */
+}
+.task{
+    position: absolute;
+}
+.tex-b{
+    position: absolute;
+    font-size: 30px;
+    margin-left: 2%;
+    margin-top: 1%;
+    font-weight: bolder;
+}
+.tex-lang{
+    font-size: 14px;
+    margin-top: 4.5%;
+    margin-left: 2%;
+    color: rgb(94, 71, 168);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tex-rate{
+    font-size: 14px;
+    margin-top: 4.5%;
+    margin-left: 9.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tex-desc{
+    width: 50%;
+    height: 5%;
+    /* background: #000; */
+    font-size: 17px;
+    margin-top: 7.5%;
+    margin-left: 2%;
+    color: rgba(0, 0, 0, 0.555);
+}
+.upload-button{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000;
-    width: 100%;
-    height: 7%;
-    text-align: center;
-    background: rgba(214, 201, 248, 0.212);
-    font-size: 25px;
-    border-bottom: solid rgba(134, 134, 134, 0.37) 2px;
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    margin-left: 52%;
+    margin-top: 6.2%;
+    background: #9368e9;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: #9368e98f 1px 3px 10px 1px;
 }
 
-
-.task-body{
-    position: absolute;
-    width: 100%;
-    height: 93%;
-    background: rgb(243, 189, 9);
+.comp-task-tex{
+    margin-top: 6%;
+    margin-left: 5%;  
+}
+.comp-task-body{
+    width: 65%;
+    height: 80%;
+    margin-top: 2%;
+    margin-left: 5.3%;
+    background: #fff;
+    float: left;
+    box-shadow: rgba(17, 17, 17, 0.308) 2px 2px 30px 1px;
 }
 .task-cover{
     width: 100%;
-    height: 7%;
-    margin-top: 1%;
-    /* background: #000; */
+    height: 100px;
+    border-bottom: rgba(0, 0, 0, 0.185) solid 2px;
+}
+.upload-date-cover{
+    position: absolute;
+    margin-left: 35%;
+}
+.upload-done-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    margin-left: 52%;
+    margin-top: 2.5%;
+    background: #9368e9;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: #9368e98f 1px 3px 10px 1px;
+}
+.stars{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100px;
+    /* background: #9368e9; */
+    /* background-clip: text;
+    color: transparent; */
+    margin-left: 67%;
+}
+.checked{
+    color: #9368e9;
+}
+.half-checked{
+    color: #a486e0;
+}
+.unchecked{
+    color: rgba(0, 0, 0, 0.692);
+}
+.starr{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    border: solid #fff 2px;
+    border-radius: 50%;
+    margin-left: 10px;
 }
 .tick{
-    width: 10%;
-    height: 100%;
-    float: left;
-    /* background: #000; */
-}
-.check{
     position: absolute;
-    margin-left:60px;
-    margin-top: 2px;
+    font-size: 22px;
+    right: 25px;
+    top: 8px;
 }
-.task{
-    width: 80%;
-    height: 100%;
-    margin-left: 10%;
-    /* background: #000; */
-}
-.task-tex{
-    /* position: absolute; */
-    font-size: 16px;
-    margin-top: 20px;
-    /* float: left; */
-    /* background: #000; */
-}
-.rating{
+
+.upload-time{
     position: absolute;
-    width: 10%;
-    height: 8%;
-    /* background: #000; */
-    right: 0;
-    margin-top: -47px;
-    margin-right: 20px;
-    text-align: center;
+    margin-top: -2.9%;
+    margin-left: 74.8%;
+}
+.upload-time-box{
+    position: absolute;
+    width:20%;
+    height: 80%;
+    background: #fff;
+    margin-top: 2%;
+    margin-left: 75%;
+    box-shadow: rgba(17, 17, 17, 0.308) 2px 2px 30px 1px;
+}
+.upload-cover{
+    width: 100%;
+    height: 100px;
+    border-bottom: rgba(0, 0, 0, 0.185) solid 2px;   
+}
+.upload-tex{
+    position: absolute;
+    font-size: 20px;
     font-weight: bolder;
+    margin-top: 7%;
+    margin-left: 6%;
 }
-.star-rating{
+.date{
     position: absolute;
-    margin-left: 72px;
-    margin-top: -20px;
+    color: #9368e9;
+    margin-left: 65%;
+    margin-top: 8%;
+}
+.t2{
+    margin-top: 22%;
+}
+.time{
+    position: absolute;
+    color: #9368e9;
+    margin-left: 65%;
+    margin-top: 23%;
+}
+@keyframes today-task{
+    from{
+        margin-top: 24%;
+        margin-left: 23%; 
+        font-size: 120px;
+        
+    }
+    to{
+        font-size: 30px;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
 }

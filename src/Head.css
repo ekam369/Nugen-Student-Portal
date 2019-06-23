@@ -89,13 +89,13 @@
     font-weight: bold;
     color:#9368e9;
 }
-#laptop{
+.laptop{
     position: absolute;
     width: 60px;
     height: 100%;
     background: #000;
     left: 0;
-    margin-left: -50px;
+    margin-left: 48px;
     margin-top: 0.7%;
     background: #9368e9;
     background-clip: text;

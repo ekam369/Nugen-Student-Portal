@@ -1,0 +1,242 @@
+.bar {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 243px;
+  height: 894px;
+  margin-top: 55px;
+  background: #9368e9;
+}
+
+@media (max-width: 739px) {
+  .bar {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 740px) {
+  .bar {
+    width: 148px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bar {
+    width: 165px;
+  }
+}
+
+@media (min-width: 1230px) {
+  .bar {
+    width: 259px;
+  }
+}
+
+.bar .tabs {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bar .tabs .tab {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.808);
+  width: 100%;
+  height: 60px;
+  font-weight: 100;
+}
+
+@media (min-width: 1000px) {
+  .bar .tabs .tab {
+    height: 70px;
+  }
+}
+
+@media (min-width: 1230px) {
+  .bar .tabs .tab {
+    height: 60px;
+  }
+}
+
+.bar .tabs .tab .tab-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 115%;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.301);
+}
+
+@media (min-width: 740px) {
+  .bar .tabs .tab .tab-cover {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bar .tabs .tab .tab-cover {
+    width: 80%;
+  }
+}
+
+.bar .tabs .tab .tab-cover .tab-tex {
+  position: absolute;
+  left: 28px;
+}
+
+@media (min-width: 740px) {
+  .bar .tabs .tab .tab-cover .tab-tex {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bar .tabs .tab .tab-cover .tab-tex {
+    visibility: visible;
+    left: 8px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1230px) {
+  .bar .tabs .tab .tab-cover .tab-tex {
+    left: 28px;
+  }
+}
+
+.bar .tabs .tab .tab-cover .ico {
+  position: absolute;
+  right: 28px;
+  font-size: 16px;
+  padding-left: 90px;
+}
+
+@media (min-width: 740px) {
+  .bar .tabs .tab .tab-cover .ico {
+    right: 55px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bar .tabs .tab .tab-cover .ico {
+    right: 14px;
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1230px) {
+  .bar .tabs .tab .tab-cover .ico {
+    right: 28px;
+  }
+}
+
+.bar .tabs .meter-box {
+  font-weight: bold;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 26px;
+  width: 100%;
+  height: 30%;
+  margin-top: 40%;
+}
+
+.bar .tabs .meter-box .meter-tex {
+  margin-bottom: 10%;
+}
+
+@media (min-width: 740px) {
+  .bar .tabs .meter-box .meter-tex {
+    margin-left: -15px;
+    display: block;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1230px) {
+  .bar .tabs .meter-box .meter-tex {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 740px) {
+  .bar .tabs .meter-box .mt1 {
+    display: none;
+  }
+}
+
+@media (min-width: 1230px) {
+  .bar .tabs .meter-box .mt1 {
+    display: inline;
+  }
+}
+
+@media (max-width: 739px) {
+  .bar .tabs .meter-box .mt2 {
+    display: none;
+  }
+}
+
+@media (min-width: 1230px) {
+  .bar .tabs .meter-box .mt2 {
+    display: none;
+  }
+}
+
+.bar .tabs .meter-box .meter {
+  width: 75%;
+  height: 2%;
+  margin-bottom: 10%;
+  background: -webkit-gradient(linear, left top, right top, from(#faeb18), color-stop(#fb813a), to(#fff));
+  background: linear-gradient(to right, #faeb18, #fb813a, #fff);
+}
+
+.bar .tabs .meter-box .me2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: solid 9px #000;
+  background: #fff;
+}
+
+.bar .tabs .meter-box .perc-completed {
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 10%;
+}
+
+.bar .tab:hover {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  background: #331e58;
+  color: #fff;
+}
+/*# sourceMappingURL=Sidebar.css.map */

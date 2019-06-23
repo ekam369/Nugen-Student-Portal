@@ -9,7 +9,7 @@ function App() {
     <div>
       <Head />
       <Sidebar />
-      <Assignment />
+      {/* <Assignment /> */}
     </div>
   );
 }

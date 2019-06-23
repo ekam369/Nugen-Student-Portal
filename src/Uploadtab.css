@@ -2,86 +2,125 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0.589),rgba(0, 0, 0, 0.171),rgba(255, 255, 255, 0.589));
+    background: linear-gradient(rgba(0, 0, 0, 0.89),rgba(2, 2, 2, 0.589),rgba(255, 255, 255, 0.589));
 }
-.upload-tex{
+.upload1-tex{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    font-size: 60px;
+    font-size: 39px;
     position: absolute;
     width: 20%;
     height: 10%;
-    color: rgb(84, 134, 141);
-    border-bottom: solid rgb(91, 110, 110) 4px;
+    color: #fff;
+    border-bottom: solid #9368e9 4px;
     margin-top: 2%;
-    margin-left: 39%;
+    margin-left: 33%;
 }
 .upload-tab-box{
     position: absolute;
-    width: 30%;
-    height: 50%;
-    margin-left: 34%;
-    margin-top: 8%;
+    width: 35%;
+    height: 60%;
+    margin-left: 25%;
+    margin-top: 10%;
     background: radial-gradient(rgb(148, 153, 152),rgb(255, 255, 255));
     border: solid rgb(50, 100, 102) 2px;
     border-radius: 20px;
 }
 
 .task-no-tex{
-    margin-top: 7%;
+    margin-top: 6%;
     margin-left: 2.5%;;
     width: 50%;
     height: 10%;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: bolder;
     color: #000;
 }
-.task-no{
+.ta1{
     position: absolute;
-    margin-left: 35%;
-    margin-top: -9%;
-    font-size: 40px;
+    right: -50px;
+    top: 0;
+}
+.task-no{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #9368e9;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: -10%;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bolder;
+}
+.tn1{
+    right: 5%;
+    width: 43px;
+    height: 43px;
 }
 .tassk{
     margin-top: 5%;
     margin-left: 3%;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
 }
 .task-name{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     position: absolute;
     width: 85%;
     height: 3%;
-    margin-left: 12%;
-    margin-top: -3.5%;
-    font-size: 17px;
+    margin-left: 29%;
+    margin-top: -5.2%;
+    font-size: 25px;
+    font-weight: 400;
+}
+.tna1{
+    width: 70%;
+    height: 90px;
+    padding-top: 7px;
+    font-size: 18px;
+    margin-left: 30%;
+}
+.upload-box-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    width: 100%;
+    height: 80px;
 }
 .task-butn{
-    position: absolute;
+    /* position: absolute; */
     background: none;
     outline: none;
     width: 50px;
     height: 80px;
-    margin-top: 8%;
-    margin-left: 15%;
-    font-size: 60px;
-    color: rgb(58, 130, 139);
+    margin-top: 6%;
+    margin-left: 3%;
+    font-size: 40px;
+    color: #9368e9;
 }
 .file-chose{
-    position: absolute;
-    margin-top: 12%;
-    margin-left: 29%;
+    /* position: absolute; */
+    /* margin-top: 12%; */
+    /* margin-left: 29%; */
     font-size: 20px; 
+    color: #000;
 }
 .task-btn{
-    margin-top: 30%;
+    margin-top: 12%;
     margin-left: 40%;
-    width: 80px;
+    width: 150px;
     height: 40px;
-    background: none;
+    background: #9368e9;
     outline: none;
-    border: solid rgb(0, 0, 0) 2px;
+    box-shadow: #000 1px 1px 10px 1px;
     font-size: 20px;
-    color: rgb(58, 130, 139);
-    border-radius: 25px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bolder;
 }

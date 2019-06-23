@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './Assignment.css';
 // import Task from './Task';
-// import Rating from './Rating';
-// import Uploadtab from './Uploadtab';
+import Rating from './Rating';
+import Uploadtab from './Uploadtab';
 import CompletedTask from './CompletedTask';
-import TodaysTask from './TodaysTask';
-import HighestRating from './HighestRating';
+// import TodaysTask from './TodaysTask';
+// import HighestRating from './HighestRating';
 
 class Assignment extends Component {
     render() { 
@@ -13,8 +13,8 @@ class Assignment extends Component {
             <div>
                 <div className="parent">
                     <CompletedTask />
-                    <TodaysTask />
-                    <HighestRating />
+                    {/* <TodaysTask />
+                    <HighestRating /> */}
                     {/* <Task /> */}
                     {/* <Rating /> */}
                     {/* <Uploadtab /> */}
