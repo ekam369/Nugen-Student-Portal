@@ -1,12 +1,14 @@
 .tex-box{
-    margin-left: 3%;
+    margin-top: 12%;
+    margin-left: 0%;
     /* background: #000; */
 }
 .rating-box{
     position: absolute;
-    width: 15.8%;
-    height: 100%;
-    margin-left: 84.2%;
+    width: 214px;
+    height: 90%;
+    right: 0;
+    margin-top: 50px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(0, 0, 0, 0.582); ;
     /* color: rgba(0, 0, 0, 0.637); */

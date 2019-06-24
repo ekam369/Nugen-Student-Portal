@@ -1,12 +1,13 @@
 .bar {
-  position: absolute;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 243px;
-  height: 894px;
+  height: 880px;
   margin-top: 55px;
   background: #9368e9;
+  z-index: 2;
 }
 
 @media (max-width: 739px) {
@@ -150,6 +151,12 @@
 @media (min-width: 1230px) {
   .bar .tabs .tab .tab-cover .ico {
     right: 28px;
+  }
+}
+
+@media (min-width: 1852px) {
+  .bar .tabs .tab .tab-cover .ico {
+    font-size: 18px;
   }
 }
 

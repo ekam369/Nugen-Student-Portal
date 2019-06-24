@@ -1,0 +1,643 @@
+$colors : (
+    purplee: #9368e9,
+    light-tex: rgba(0, 0, 0, 0.555)
+);
+
+$borders : (
+    border-botm: solid rgba(12, 12, 12, 0.192) 1px,
+    border-lefts: solid rgba(12, 12, 12, 0.103) 2px,
+    border1: solid #9368e9 2px
+);
+
+$box-shadow : (
+    shad: rgba(17, 17, 17, 0.527) 2px 2px 20px 1px
+);
+
+@function color($name){
+    @return map-get($colors, $name);
+}
+@function border($name){
+    @return map-get($borders, $name);
+}
+@function shadow($name){
+    @return map-get($box-shadow, $name);
+}
+
+$width: 450px;
+$height-task: 140px;
+
+$desk0 : 549px;
+$desk1 : 550px;
+$desk2 : 630px;
+$desk3 : 720px;
+$desk4 : 740px;
+$desk5 : 840px;
+$desk6 : 1000px;
+$desk7 : 1000px;
+$desk8 : 1120px;
+$desk9 : 1230px;
+$desk10 : 1230px;
+$desk11 : 1430px;
+$desk12 : 1530px;
+$desk13 : 1835px;
+
+@mixin desk0 {
+    @media (max-width: $desk0) {
+        @content;
+    }
+}
+@mixin desk1 {
+    @media (min-width: $desk1) {
+        @content;
+    }
+}
+@mixin desk2 {
+    @media (min-width: $desk2) {
+        @content;
+    }
+}
+@mixin desk3 {
+    @media (min-width: $desk3) {
+        @content;
+    }
+}
+@mixin desk4 {
+    @media (min-width: $desk4) {
+        @content;
+    }
+}
+@mixin desk5 {
+    @media (min-width: $desk5) {
+        @content;
+    }
+}
+@mixin desk6 {
+    @media (max-width: $desk6) {
+        @content;
+    }
+}
+@mixin desk7 {
+    @media (min-width: $desk7) {
+        @content;
+    }
+}
+@mixin desk8 {
+    @media (min-width: $desk8) {
+        @content;
+    }
+}
+@mixin desk9 {
+    @media (min-width: $desk9) {
+        @content;
+    }
+}
+@mixin desk10 {
+    @media (max-width: $desk9) {
+        @content;
+    }
+}
+@mixin desk11 {
+    @media (min-width: $desk11) {
+        @content;
+    }
+}
+@mixin desk12 {
+    @media (min-width: $desk12) {
+        @content;
+    }
+}
+@mixin desk13 {
+    @media (min-width: $desk13) {
+        @content;
+    }
+}
+
+//Global
+.task{
+    position: absolute;
+}
+.tex-b{
+    position: absolute;
+    font-size: 23px;
+    margin-left: 9px;;
+    margin-top: 6px;
+    font-weight: bolder;
+
+    @include desk1{
+        font-size: 25px;
+    }
+    @include desk4{
+        font-size: 22px;           
+    }
+    @include desk5{
+        font-size: 25px;
+    }
+    @include desk8{
+        font-size: 30px;
+    }
+    @include desk9{
+        font-size: 25px;
+    }
+    @include desk12{
+        font-size: 30px;
+    }
+    @include desk13{
+        margin-left: 3%;  
+        margin-top: 12px;   
+    }
+
+}
+.tex-lang{
+    font-size: 14px;
+    margin-top: 40px;
+    margin-left: 9px;
+    color: rgb(94, 71, 168);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    @include desk1{
+        margin-top: 50px;
+    }
+    @include desk4{
+        margin-top: 40px;           
+    }
+    @include desk5{
+        margin-top: 50px;   
+    }
+    @include desk8{
+        margin-top: 52px;
+        font-size: 16px;   
+    }
+    @include desk9{
+        margin-top: 48px;
+        font-size: 14px;
+    }
+    @include desk12{
+        margin-top: 52px;
+        font-size: 16px;   
+    }
+    @include desk13{
+        margin-left: 3%;
+        margin-top: 57px;
+    }
+}
+.tex-rate{
+    font-size: 14px;
+    margin-top: 40px;
+    margin-left: 105px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    @include desk1{
+        margin-top: 50px;
+    }
+    @include desk4{
+        margin-top: 40px;           
+    }
+    @include desk5{
+        margin-top: 50px;   
+    }
+    @include desk8{
+        margin-top: 52px;
+        font-size: 16px;
+        margin-left: 120px;   
+    }
+    @include desk9{
+        margin-left: 110px;
+        margin-top: 48px;
+        font-size: 14px;
+    }
+    @include desk12{
+        margin-top: 52px;
+        font-size: 16px;
+        margin-left: 120px;   
+    }
+    @include desk13{
+        margin-left: 10.5%;
+        margin-top: 57px;
+    }
+}
+.tex-desc{
+    width: 350px;
+    height: 5%;
+    font-size: 14px;
+    margin-top: 75px;
+    margin-left: 2%;
+    color: rgba(0, 0, 0, 0.555);
+
+    @include desk2{
+        width: 400px;
+        font-size: 16px;
+        margin-top: 80px;
+    }
+    @include desk4{
+        margin-top: 75px;
+        font-size: 14px;           
+    }
+    @include desk5{
+        font-size: 16px;
+        margin-top: 82px;   
+    }
+    @include desk8{
+        width: 550px;
+        font-size: 18px;
+    }
+    @include desk9{
+        width: 400px;
+        font-size: 16px;
+    }
+    @include desk12{
+        width: 550px;
+        font-size: 17px;
+    }
+    @include desk13{
+        font-size: 18px;
+        margin-top: 90px;
+        margin-left: 3%;   
+    }
+}
+.upload-button{
+    visibility: hidden;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 90%;
+    margin-bottom: 10px;
+    background: #9368e9;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: #9368e98f 1px 3px 10px 1px;
+
+    @include desk2{
+        width: 65px;
+        height: 38px;
+        margin-left: 85%;
+    }
+    @include desk6{
+        visibility: visible;
+    }
+}
+.upload-button-1000{
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    margin-left: 60%;
+    margin-top: -32px;
+    background: #9368e9;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: #9368e98f 1px 3px 10px 1px;
+
+    @include desk6{
+        visibility: hidden;
+    }
+    @include desk9{
+        margin-left: 52%;
+    }
+    @include desk11{
+        margin-left: 45%;
+    }
+    @include desk13{
+        margin-left: 54%;
+    }
+}
+
+.comp-task-par{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    width: 100%;
+    height: 881px;
+    margin-top: 55px;
+    // background: #000;
+    background: rgba(81, 49, 117, 0.055);
+
+    @include desk9{
+        width: 79%;
+        margin-left: 243px;
+        right: 217px;;
+    }
+
+    .head{
+        width: 100%;
+        height: 4%;
+        color: color(light-tex);
+        font-size: 25px;
+        text-align: center;
+
+        @include desk1{
+            text-align: left;
+            font-size: 26px;
+        }
+    }
+    .taday-task-tex{
+        margin-top: 30px;  
+        margin-left: 3%;
+
+        @include desk4{
+            margin-left: 22%;
+        }
+        @include desk7{
+            margin-left: 20%;
+        }
+        @include desk9{
+            margin-left: 240px;
+        }
+        @include desk12{
+            margin-left: 16%;
+        }
+        @include desk13{
+            margin-left: 8%;
+        }
+    }
+
+    .task-body{
+        display: flex;
+        width: 94%;
+        // width: 450px;
+        margin-right: 2em;
+        height: 140px;
+        margin-left: 4%;
+        margin-top: 18px;
+        // background: #000;
+        box-shadow: rgba(17, 17, 17, 0.527) 2px 2px 20px 1px;
+
+        @include desk4{
+            width: 75.5%;
+            margin-left: 23%;
+        }
+        @include desk7{
+            margin-left: 20%;
+            max-width: 75.5%;
+        }
+        @include desk9{
+            margin-left: 250px;
+            width: 68%;
+        }
+        @include desk11{
+            width: 58%;
+        }
+        @include desk12{
+            margin-left: 16%;
+        }
+        @include desk13{
+            margin-left: 9%;
+            width: 65%;
+            height: 150px;
+        }
+    }
+
+    .compl-task-tex{
+        margin-top: 60px;
+        margin-left: 3%; 
+        margin-bottom: 25px;
+
+        @include desk4{
+            margin-left: 22%;
+        }
+        @include desk7{
+            margin-left: 20%;
+        }
+        @include desk9{
+            margin-left: 240px;
+        }
+        @include desk12{
+            margin-left: 16%;
+        }
+        @include desk13{
+            margin-left: 8%;
+        }
+    }
+
+    .task-cover{
+        display: flex;
+        width: 93%;
+        height: 100px;
+        background: #fff;
+        border-bottom: rgba(0, 0, 0, 0.185) solid 2px;
+        margin-right: 2em;
+        margin-left: 4%;
+        margin-top: 0px;
+        box-shadow: rgba(17, 17, 17, 0.527) 2px 2px 20px 1px;
+
+        @include desk4{
+            width: 75.5%;
+            margin-left: 23%;
+        }
+        @include desk7{
+            margin-left: 20%;
+            max-width: 75.5%;
+        }
+        @include desk9{
+            margin-left: 250px;
+            width: 68%;
+        }
+        @include desk11{
+            width: 58%;
+        }
+        @include desk12{
+            margin-left: 16%;
+        }
+        @include desk13{
+            height: 120px;
+            width: 65%;
+            margin-left: 9%;
+        }
+
+        .tex-lang{
+            font-size: 14px;
+            margin-top: 40px;
+            margin-left: 9px;
+            color: rgb(94, 71, 168);
+            font-family: Arial, Helvetica, sans-serif;
+            
+            @include desk1{
+                margin-top: 50px;
+            }
+            @include desk4{
+                margin-top: 40px;           
+            }
+            @include desk5{
+                margin-top: 50px;   
+            }
+            @include desk8{
+                margin-top: 52px;
+                font-size: 16px;   
+            }
+            @include desk9{
+                margin-top: 48px;
+                font-size: 14px;
+            }
+            @include desk12{
+                margin-top: 52px;
+                font-size: 16px;   
+            }
+            @include desk13{
+                margin-left: 3%;
+                margin-top: 67px;
+            }
+        }
+        .tex-rate{
+            font-size: 14px;
+            margin-top: 40px;
+            margin-left: 105px;
+            font-family: Arial, Helvetica, sans-serif;
+        
+            @include desk1{
+                margin-top: 50px;
+            }
+            @include desk4{
+                margin-top: 40px;           
+            }
+            @include desk5{
+                margin-top: 50px;   
+            }
+            @include desk8{
+                margin-top: 52px;
+                font-size: 16px;
+                margin-left: 120px;   
+            }
+            @include desk9{
+                margin-left: 110px;
+                margin-top: 48px;
+                font-size: 14px;
+            }
+            @include desk12{
+                margin-top: 52px;
+                font-size: 16px;
+                margin-left: 120px;   
+            }
+            @include desk13{
+                margin-left: 10.5%;
+                margin-top: 67px;
+            }
+        }
+        
+        .don{
+            margin-top: -19px;
+        }
+
+        .circle{
+            width: 17px;
+            height: 17px;
+            border: solid #fff 2px;
+            border-radius: 50%;
+            margin-top: 5px;
+            // margin-left: 10px;
+
+            @include desk7{
+                margin-left: 10px;
+            }
+        }
+        .tic{
+            margin-top: -6px;
+
+            @include desk7{
+                // margin-top: 10px;
+            }
+        }
+        .tick{
+            font-size: 24px;
+
+            @include desk7{
+                margin-top: -20px;
+            }
+        }
+        // .comp-task-body{
+        //     width: 450px;
+        //     height: 140px;
+        //     margin-top: 2%;
+        //     margin-left: 5.3%;
+        //     background: #fff;
+        //     float: left;
+            
+        //     box-shadow: rgba(17, 17, 17, 0.308) 2px 2px 30px 1px;
+        // }
+
+        .stars{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+            height: 100px;
+            margin-left: 40%;
+
+            @include desk0{
+                display: none;
+            }
+            @include desk4{
+                margin-left: 28%;   
+            }
+            @include desk5{
+                margin-left: 30%;
+            }
+            @include desk7{
+                margin-left: 26%;
+            }
+            @include desk9{
+                visibility: hidden;
+            }
+            @include desk11{
+                margin-left: 55%;
+                visibility: visible;
+            }
+            @include desk12{
+                margin-left: 57%;
+            }
+            @include desk13{
+                margin-left: 65%;
+            }
+            
+        }
+        .checked{
+            color: #9368e9;
+        }
+        .half-checked{
+            color: #8f69da;
+            // color: #a486e0;
+        }
+        .unchecked{
+            color: rgba(0, 0, 0, 0.692);
+        }
+        .starr{
+            font-size: 20px;
+            margin-top: 15px;
+            margin-left: 13px;
+            // margin-left: 20px;
+            @include desk3{
+                font-size: 25px;    
+            }
+            @include desk4{
+                font-size: 20px;   
+            }
+            @include desk5{
+                font-size: 25px;
+            }
+            @include desk11{
+                font-size: 20px;
+            }
+            @include desk12{
+                font-size: 25px;
+                margin-left: 15px;
+            }
+        }
+        
+
+    }
+    
+}
+
+.rating-box{
+    @include desk10{
+        display: none;
+    }
+}

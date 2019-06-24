@@ -1,9 +1,6 @@
 .parent{
     overflow: hidden;
-    position: absolute;
     background: rgb(246, 246, 246);
-    width: 86%;
+    width: 100%;
     height: 93.8%;
-    margin-left: 14%;
-    margin-top: 3.2%;
 }

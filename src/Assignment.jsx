@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Assignment.css';
 // import Task from './Task';
 import Rating from './Rating';
-import Uploadtab from './Uploadtab';
+// import Uploadtab from './Uploadtab';
 import CompletedTask from './CompletedTask';
 // import TodaysTask from './TodaysTask';
 // import HighestRating from './HighestRating';
@@ -16,7 +16,7 @@ class Assignment extends Component {
                     {/* <TodaysTask />
                     <HighestRating /> */}
                     {/* <Task /> */}
-                    {/* <Rating /> */}
+                    <Rating />
                     {/* <Uploadtab /> */}
                 </div>
             </div>    

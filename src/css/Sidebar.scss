@@ -17,6 +17,7 @@ $desk1 : 740px;
 $desk2 : 900px;
 $desk3 : 1000px;
 $desk4 : 1230px;
+$desk5 : 1852px;
 
 @mixin desk0 {
     @media (max-width: #{$desk0}) {
@@ -43,6 +44,11 @@ $desk4 : 1230px;
         @content;
     }
 }
+@mixin desk5{
+    @media (min-width: #{$desk5}) {
+        @content;
+    }
+}
 
 @function color($name){
     @return map-get($colors, $name);
@@ -52,12 +58,13 @@ $desk4 : 1230px;
 }
 
 .bar{
-    position: absolute;
+    position: fixed;
     display: flex;
     width: 243px;
-    height: 894px;
+    height: 880px;
     margin-top: 55px;
     background: color(purplee);
+    z-index: 2;
 
     @include desk0{
         visibility: hidden;
@@ -72,6 +79,9 @@ $desk4 : 1230px;
     @include desk4{
         width: 259px;
     }
+    // @include desk5{
+    //     height: 370px;
+    // }
 
     .tabs{
         width: 100%;
@@ -97,6 +107,7 @@ $desk4 : 1230px;
             @include desk4{
                 height: 60px;
             }
+            
             
             .tab-cover{
                 display: flex;
@@ -148,6 +159,9 @@ $desk4 : 1230px;
                     }
                     @include desk4{
                         right: 28px;
+                    }
+                    @include desk5{
+                        font-size: 18px;
                     }
                 }
             }
