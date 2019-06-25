@@ -33,7 +33,7 @@ class Task2 extends Component {
                                 <i class="fa fa-check tick"></i>
                                 </div>
                             </div>
-                            <div className="upload-button">
+                            <div className="upload-button don">
                                 <div className="circle">
                                     <div className="tic">
                                     <i class="fa fa-check tick"></i>
@@ -57,7 +57,7 @@ class Task2 extends Component {
                                 <i class="fa fa-check tick"></i>
                                 </div>
                             </div>
-                            <div className="upload-button">
+                            <div className="upload-button don">
                                 <div className="circle">
                                     <div className="tic">
                                     <i class="fa fa-check tick"></i>
@@ -81,7 +81,7 @@ class Task2 extends Component {
                                 <i class="fa fa-check tick"></i>
                                 </div>
                             </div>
-                            <div className="upload-button">
+                            <div className="upload-button don">
                                 <div className="circle">
                                     <div className="tic">
                                     <i class="fa fa-check tick"></i>
@@ -105,7 +105,7 @@ class Task2 extends Component {
                                 <i class="fa fa-check tick"></i>
                                 </div>
                             </div>
-                            <div className="upload-button">
+                            <div className="upload-button don">
                                 <div className="circle">
                                     <div className="tic">
                                     <i class="fa fa-check tick"></i>
@@ -129,31 +129,7 @@ class Task2 extends Component {
                                 <i class="fa fa-check tick"></i>
                                 </div>
                             </div>
-                            <div className="upload-button">
-                                <div className="circle">
-                                    <div className="tic">
-                                    <i class="fa fa-check tick"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="stars">
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star-half-full half-checked starr"></i>
-                                <i class="fa fa-star-o unchecked starr"></i>
-                            </div>
-                        </div>
-                        <div className="task-cover">
-                            <div className="task tex-b">Move Person</div>
-                            <div className="task tex-lang">HTML|CSS|JS</div>
-                            <div className="task tex-rate">|| 4.5/5.0</div>
-                            <div className="upload-button-1000 don">Done
-                                <div className="circle">
-                                <i class="fa fa-check tick"></i>
-                                </div>
-                            </div>
-                            <div className="upload-button">
+                            <div className="upload-button don">
                                 <div className="circle">
                                     <div className="tic">
                                     <i class="fa fa-check tick"></i>
