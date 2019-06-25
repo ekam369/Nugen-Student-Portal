@@ -1,6 +1,7 @@
 .tex-box{
-    margin-top: 12%;
+    margin-top: 40%;
     margin-left: 0%;
+    text-align: center;
     /* background: #000; */
 }
 .rating-box{
@@ -30,7 +31,7 @@
 .anim-star{
     width: 140px;
     height: 140px;
-    background: #9368e9b6;
+    background: rgb(37, 67, 165);
     color: #000;
     clip-path: polygon(100% 50%,84.70057014808336% 54.5684167277018%,
     91.0518476172854% 60.99980941685713%,
@@ -78,15 +79,17 @@
     93.30127018922192% 24.99999999999998%,
     82.33578363789502% 36.60607986722184%,
     91.0518476172854% 39.00019058314283%,84.70057014808336% 45.43158327229816%);
-    animation: clip 1.5s infinite;
+    animation: clip 2s infinite;
     border: solid #000 2px;
+    margin-left: 25px;
 }
 .my-profile{
     width: 70%;
     margin-top: 15%;
     font-size: 25px;
     font-weight: bolder;
-    color: rgba(0, 0, 0, 0.582); ;
+    color: rgba(0, 0, 0, 0.582); 
+    margin-left: 12px;
 }
 .short-tex{
     margin-top: 20%;
@@ -111,38 +114,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     margin-top: 2%;
-    margin-left: 6%;
+    margin-left: 50px;
     font-size: 49px;
     font-weight: bolder;
-    color: #9368e9da;
+    color: #e99612;
     background: #fff;
-    border: solid #9368e9 1px;
+    border: solid rgb(37, 67, 165) 13px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 .prev-rating-box{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 4%;
-    margin-left: 6%;
-    width: 110px;
-    height: 110px;
-    color: #9368e9da;
+    margin-left: 50px;
+    width: 90px;
+    height: 90px;
+    color: #e99612;
     background: #fff;
-    border: solid #9368e9 1px;
+    border: solid rgb(37, 67, 165) 14px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     border-radius: 50%;
     font-size: 45px;
     font-weight: bolder;
+}
+.box-rating{
+    margin-left: -10px;
 }
 .star{
     position: absolute;
     font-size: 20px;
     margin-left: 16%;
     margin-top: -5%;
-    color: #9368e9da;
+    color: #e99612;
 }
 .box-tex{
     font-size: 20px;
