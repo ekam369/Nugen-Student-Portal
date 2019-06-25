@@ -40,6 +40,7 @@ $desk10 : 1230px;
 $desk11 : 1430px;
 $desk12 : 1530px;
 $desk13 : 1835px;
+$desk14 : 1380px;
 
 @mixin desk0 {
     @media (max-width: $desk0) {
@@ -111,6 +112,11 @@ $desk13 : 1835px;
         @content;
     }
 }
+@mixin desk14 {
+    @media (min-width: $desk14) {
+        @content;
+    }
+}
 
 //Global
 .task{
@@ -118,122 +124,160 @@ $desk13 : 1835px;
 }
 .tex-b{
     position: absolute;
-    font-size: 23px;
+    font-size: 36px;
     margin-left: 9px;;
-    margin-top: 6px;
+    margin-top: 15px;
     font-weight: bolder;
+    color: #fff;
+    // color: #9368e9;
+    // font-family: 'Almendra SC';
+    // font-style: italic;
+    // letter-spacing: 2px;
 
     @include desk1{
-        font-size: 25px;
+        font-size: 45px;
+        margin-top: 12px;
     }
     @include desk4{
-        font-size: 22px;           
+        margin-top: 6px;
+        font-size: 50px;           
     }
     @include desk5{
-        font-size: 25px;
+        font-size: 50px;
     }
     @include desk8{
-        font-size: 30px;
+        margin-left: 20px;
     }
-    @include desk9{
-        font-size: 25px;
-    }
-    @include desk12{
-        font-size: 30px;
-    }
+    // @include desk12{
+    //     font-size: 30px;
+    // }
     @include desk13{
         margin-left: 3%;  
         margin-top: 12px;   
+        font-size: 58px;
     }
 
 }
 .tex-lang{
     font-size: 14px;
-    margin-top: 40px;
-    margin-left: 9px;
-    color: rgb(94, 71, 168);
+    margin-top: 18px;
+    margin-left: 47%;
+    // color: rgb(94, 71, 168);
+    color: rgb(255, 210, 60);
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
     
     @include desk1{
-        margin-top: 50px;
+        margin-left: 50%;
+        margin-top: 22px;
     }
     @include desk4{
-        margin-top: 40px;           
+        margin-top: 18px;
+        margin-left: 43%;           
     }
     @include desk5{
-        margin-top: 50px;   
+        margin-top: 20px;
+        margin-left: 40%;   
+    }
+    @include desk7{
+        margin-left: 35%;
     }
     @include desk8{
-        margin-top: 52px;
-        font-size: 16px;   
+        font-size: 18px;
+        margin-left: 30%;
+        margin-top: 40px;
     }
     @include desk9{
-        margin-top: 48px;
+        margin-top: 22px;
         font-size: 14px;
+        margin-left: 34%;
+    }
+    @include desk11{
+        margin-left: 28%;
     }
     @include desk12{
-        margin-top: 52px;
+        margin-left: 335px;
+        margin-top: 22px;
         font-size: 16px;   
     }
     @include desk13{
-        margin-left: 3%;
-        margin-top: 57px;
+        font-size: 18px;
+        margin-top: 50px;
+        margin-left: 27%;
+        text-decoration: underline;
     }
 }
 .tex-rate{
     font-size: 14px;
     margin-top: 40px;
-    margin-left: 105px;
+    margin-left: 47%;
     font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: bold;
 
     @include desk1{
-        margin-top: 50px;
+        margin-top: 44px;
+        margin-left: 50%;
+    }
+    @include desk2{
+        margin-left: 47%;
     }
     @include desk4{
         margin-top: 40px;           
+        margin-left: 43%;
     }
     @include desk5{
-        margin-top: 50px;   
+        margin-top: 45px;
+        margin-left: 40%;   
+    }
+    @include desk7{
+        margin-left: 35%;
     }
     @include desk8{
-        margin-top: 52px;
-        font-size: 16px;
-        margin-left: 120px;   
+        font-size: 18px;
+        margin-left: 41%;
+        margin-top: 40px;
     }
     @include desk9{
-        margin-left: 110px;
-        margin-top: 48px;
+        margin-top: 45px;
         font-size: 14px;
+        margin-left: 32%;
+    }
+    @include desk11{
+        margin-left: 28%;
     }
     @include desk12{
-        margin-top: 52px;
+        margin-top: 50px;
         font-size: 16px;
-        margin-left: 120px;   
+        margin-left: 335px;   
     }
     @include desk13{
-        margin-left: 10.5%;
-        margin-top: 57px;
+        margin-left: 36%;
+        margin-top: 50px;
+        font-weight: bold;
     }
 }
 .tex-desc{
     width: 350px;
     height: 5%;
     font-size: 14px;
-    margin-top: 75px;
+    margin-top: 85px;
     margin-left: 2%;
-    color: rgba(0, 0, 0, 0.555);
+    // color: rgba(0, 0, 0, 0.555);
+    color: rgba(255, 255, 255, 0.692);
+    font-weight: bold;
 
     @include desk2{
-        width: 400px;
+        width: 450px;
         font-size: 16px;
-        margin-top: 80px;
+        margin-top: 85px;
     }
     @include desk4{
-        margin-top: 75px;
-        font-size: 14px;           
+        margin-top: 85px;
+        font-size: 16px;           
     }
     @include desk5{
-        font-size: 16px;
+        font-size: 17px;
         margin-top: 82px;   
     }
     @include desk8{
@@ -250,7 +294,7 @@ $desk13 : 1835px;
     }
     @include desk13{
         font-size: 18px;
-        margin-top: 90px;
+        margin-top: 95px;
         margin-left: 3%;   
     }
 }
@@ -264,7 +308,9 @@ $desk13 : 1835px;
     height: 40px;
     margin-left: 90%;
     margin-bottom: 10px;
-    background: #9368e9;
+    // background: #9368e9;
+    background: #e99612;
+    color: #fff;
     color: #fff;
     font-weight: bold;
     font-size: 20px;
@@ -275,6 +321,7 @@ $desk13 : 1835px;
         width: 65px;
         height: 38px;
         margin-left: 85%;
+        margin-bottom: 20px;
     }
     @include desk6{
         visibility: visible;
@@ -290,7 +337,7 @@ $desk13 : 1835px;
     position: absolute;
     margin-left: 60%;
     margin-top: -32px;
-    background: #9368e9;
+    background: #e99612;
     color: #fff;
     font-weight: bold;
     font-size: 20px;
@@ -318,16 +365,19 @@ $desk13 : 1835px;
     height: 881px;
     margin-top: 55px;
     // background: #000;
-    background: rgba(81, 49, 117, 0.055);
+    background: rgba(58, 52, 65, 0.089);
 
     @include desk9{
         width: 79%;
         margin-left: 243px;
-        right: 217px;;
+        right: 217px;
+    }
+    @include desk13{
+        height: 890px;
     }
 
     .head{
-        width: 100%;
+        width: 90%;
         height: 4%;
         color: color(light-tex);
         font-size: 25px;
@@ -367,8 +417,14 @@ $desk13 : 1835px;
         height: 140px;
         margin-left: 4%;
         margin-top: 18px;
-        // background: #000;
-        box-shadow: rgba(17, 17, 17, 0.527) 2px 2px 20px 1px;
+        // background: rgb(118, 174, 238);
+        // background: #35720cdf;
+        // background: #b42e2e;
+        background: rgb(37, 67, 165);
+        border-radius: 15px;
+        // background: radial-gradient( rgb(172, 54, 54), #fda707d2);
+        // background: color(purplee);
+        box-shadow: #353536 3px 3px 30px 2px;
 
         @include desk4{
             width: 75.5%;
@@ -421,6 +477,7 @@ $desk13 : 1835px;
         display: flex;
         width: 93%;
         height: 100px;
+        // background: rgb(236, 251, 245);
         background: #fff;
         border-bottom: rgba(0, 0, 0, 0.185) solid 2px;
         margin-right: 2em;
@@ -452,32 +509,43 @@ $desk13 : 1835px;
             margin-left: 9%;
         }
 
+        .tex-b{
+            color: rgb(77, 75, 75);
+            font-family: sans-serif;
+            font-size: 34px;
+            @include desk1{
+                font-size: 38px;
+            }
+            @include desk5{
+                font-size: 38px;
+            }
+            @include desk8{
+                margin-left: 20px;
+            }
+            // @include desk12{
+            //     font-size: 30px;
+            // }
+            @include desk13{
+                margin-left: 3%;  
+                margin-top: 12px;   
+                font-size: 40px;
+                
+            }
+        }
+        
         .tex-lang{
             font-size: 14px;
-            margin-top: 40px;
+            margin-top: 60px;
             margin-left: 9px;
             color: rgb(94, 71, 168);
             font-family: Arial, Helvetica, sans-serif;
             
             @include desk1{
-                margin-top: 50px;
-            }
-            @include desk4{
-                margin-top: 40px;           
-            }
-            @include desk5{
-                margin-top: 50px;   
+                margin-top: 58px;
             }
             @include desk8{
-                margin-top: 52px;
-                font-size: 16px;   
-            }
-            @include desk9{
-                margin-top: 48px;
-                font-size: 14px;
-            }
-            @include desk12{
-                margin-top: 52px;
+                margin-left: 20px;
+                margin-top: 62px;
                 font-size: 16px;   
             }
             @include desk13{
@@ -487,33 +555,18 @@ $desk13 : 1835px;
         }
         .tex-rate{
             font-size: 14px;
-            margin-top: 40px;
+            margin-top: 60px;
             margin-left: 105px;
             font-family: Arial, Helvetica, sans-serif;
+            color: #000;
         
             @include desk1{
-                margin-top: 50px;
-            }
-            @include desk4{
-                margin-top: 40px;           
-            }
-            @include desk5{
-                margin-top: 50px;   
+                margin-top: 58px;
             }
             @include desk8{
-                margin-top: 52px;
-                font-size: 16px;
-                margin-left: 120px;   
-            }
-            @include desk9{
-                margin-left: 110px;
-                margin-top: 48px;
-                font-size: 14px;
-            }
-            @include desk12{
-                margin-top: 52px;
-                font-size: 16px;
-                margin-left: 120px;   
+                margin-left: 130px;
+                margin-top: 62px;
+                font-size: 16px;   
             }
             @include desk13{
                 margin-left: 10.5%;
@@ -522,17 +575,32 @@ $desk13 : 1835px;
         }
         
         .don{
+            // color: rgb(195, 255, 0);
+            color: #fff;
             margin-top: -19px;
+            // background: #e99612;
+            background: #f54b4b;
+            // margin-top: -38px;
+            height: 42px;
+            font-size: 22px;
+
+            @include desk13{
+                margin-top: -38px;
+            }
         }
 
         .circle{
-            width: 17px;
-            height: 17px;
-            border: solid #fff 2px;
+            width: 15px;
+            height: 15px;
+            border: solid rgb(0, 234, 255) 3px;
             border-radius: 50%;
-            margin-top: 5px;
+            margin-top: 3px;
             // margin-left: 10px;
 
+            @include desk2{
+                width: 20px;
+                height: 20px;
+            }
             @include desk7{
                 margin-left: 10px;
             }
@@ -546,21 +614,17 @@ $desk13 : 1835px;
         }
         .tick{
             font-size: 24px;
+            // color: rgb(255, 238, 0);
+            // color: rgb(68, 117, 55);
+            color: #fff;
 
+            @include desk2{
+                font-size: 28px;
+            }
             @include desk7{
                 margin-top: -20px;
             }
         }
-        // .comp-task-body{
-        //     width: 450px;
-        //     height: 140px;
-        //     margin-top: 2%;
-        //     margin-left: 5.3%;
-        //     background: #fff;
-        //     float: left;
-            
-        //     box-shadow: rgba(17, 17, 17, 0.308) 2px 2px 30px 1px;
-        // }
 
         .stars{
             position: absolute;
@@ -569,22 +633,19 @@ $desk13 : 1835px;
             align-items: center;
             width: 25%;
             height: 100px;
-            margin-left: 40%;
+            margin-left: 50%;
 
-            @include desk0{
-                display: none;
+            @include desk2{
+                margin-left: 45%;
             }
             @include desk4{
-                margin-left: 28%;   
+                margin-left: 34%;   
             }
             @include desk5{
-                margin-left: 30%;
+                margin-left: 34%;
             }
             @include desk7{
                 margin-left: 26%;
-            }
-            @include desk9{
-                visibility: hidden;
             }
             @include desk11{
                 margin-left: 55%;
@@ -599,20 +660,27 @@ $desk13 : 1835px;
             
         }
         .checked{
-            color: #9368e9;
+            // color: #b8aa2c;
+            // color: rgb(95, 49, 85);
+            color: rgb(248, 156, 18);
         }
         .half-checked{
-            color: #8f69da;
+            // color: #8f69da;
+            color: rgba(248, 156, 18, 0.664)
             // color: #a486e0;
         }
         .unchecked{
-            color: rgba(0, 0, 0, 0.692);
+            // color: rgba(0, 0, 0, 0.692);
+            color: rgb(248, 156, 18)
         }
         .starr{
-            font-size: 20px;
+            font-size: 17px;
             margin-top: 15px;
-            margin-left: 13px;
-            // margin-left: 20px;
+            margin-left: 4px;
+            @include desk2{
+                font-size: 20px;
+                margin-left: 10px; 
+            }
             @include desk3{
                 font-size: 25px;    
             }
@@ -622,6 +690,12 @@ $desk13 : 1835px;
             @include desk5{
                 font-size: 25px;
             }
+            @include desk9{
+                font-size: 20px;
+            }
+            @include desk14{
+                font-size: 25px;
+            }
             @include desk11{
                 font-size: 20px;
             }
@@ -629,6 +703,7 @@ $desk13 : 1835px;
                 font-size: 25px;
                 margin-left: 15px;
             }
+
         }
         
 
